@@ -10,7 +10,7 @@ public class ReverseInteger {
 //    int[] num=new int[];
     int divider = 1;
     int temp=number;
-    while (temp > 10) {
+    while (temp >= 10) {
       temp /= 10;
       divider *= 10;
     }
