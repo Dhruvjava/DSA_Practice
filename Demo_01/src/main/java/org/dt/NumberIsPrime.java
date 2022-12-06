@@ -12,7 +12,7 @@ public class NumberIsPrime {
     int number = Integer.parseInt(reader.readLine());
     int div = 2;
     boolean isPrime = true;
-    while (div * div <= number) {
+    while (Math.pow(div,2) <= number) {
       int rem = number % div;
       if (rem == 0) {
         isPrime = false;

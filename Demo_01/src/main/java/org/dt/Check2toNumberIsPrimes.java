@@ -13,7 +13,7 @@ public class Check2toNumberIsPrimes {
     for (int i = 2; i <= number; i++) {
       int div = 2;
       boolean isPrime = true;
-      while (div * div <= i) {
+      while (Math.pow(div,2) <= i) {
         int rem = i % div;
         if (rem == 0) {
           isPrime = false;
