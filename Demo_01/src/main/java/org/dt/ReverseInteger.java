@@ -7,18 +7,19 @@ public class ReverseInteger {
   public static void main(String[] args) {
     Scanner scanner = new Scanner(System.in);
     int number = scanner.nextInt();
-//    int[] num=new int[];
-    int divider = 1;
-    int temp=number;
-    while (temp >= 10) {
-      temp /= 10;
-      divider *= 10;
+    int temp = 0;
+    int i = 0;
+    int test=number;
+    while(test> 10){
+      test =test/10;
+      i ++;
     }
-    while (divider >= 1) {
-      int value = number / divider;
-      number %= divider;
-      System.out.println(value);
-      divider /= 10;
+    while (number > 0){
+      int n= number%10;
+      number /=10;
+      temp += n*(int) Math.pow(10,i);
+      i--;
     }
+    System.out.println(temp);
   }
 }
