@@ -23,8 +23,8 @@ public class RotateInteger {
     int divider = (int) Math.pow(10, k);
     System.out.println(k);
     int result = n / divider;
-    int remender = n % divider;
-    int rotationalVal = (int) (remender * Math.pow(10, (i - k)));
+    int remainder = n % divider;
+    int rotationalVal = (int) (remainder * Math.pow(10, (i - k)));
     System.out.println(rotationalVal + result);
   }
 
