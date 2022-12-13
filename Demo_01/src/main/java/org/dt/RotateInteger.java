@@ -11,13 +11,17 @@ public class RotateInteger {
     BufferedReader reader = new BufferedReader(isr);
     int n = Integer.parseInt(reader.readLine());
     int k = Integer.parseInt(reader.readLine());
-    int divider = (int) Math.pow(10,k);
     int i = 0;
     int test = n;
     while (test > 0) {
       test /= 10;
       i++;
     }
+    if (k >= i) {
+      k = k % i;
+    }
+    int divider = (int) Math.pow(10, k);
+    System.out.println(k);
     int result = n / divider;
     int remender = n % divider;
     int rotationalVal = (int) (remender * Math.pow(10, (i - k)));
