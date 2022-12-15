@@ -14,15 +14,15 @@ public class SortingArray {
     for (int i=0; i<len; i++) {
       array[i] = Integer.parseInt(reader.readLine());
     }
-    array = sort(array,len);
+    int[] sortArray = sort(array, len);
 
     for (int i=0; i<len; i++) {
-      System.out.print(array[i]+ " ");
+      System.out.print(sortArray[i] + " ");
     }
   }
 
   public static int[] sort(int[] array, int len) {
-    int temp = 0;
+    int temp;
     int p = 0;
     for (int i = 0; i < len; i++) {
       temp = array[i];
@@ -37,5 +37,4 @@ public class SortingArray {
     }
     return array;
   }
-
 }
