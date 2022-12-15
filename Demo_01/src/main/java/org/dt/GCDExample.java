@@ -26,10 +26,9 @@ public class GCDExample {
   }
   public static int getGcd(int less, int greater) {
     int result = 0;
-    int remainder=less;
-    while (remainder !=0){
+    while (less % greater !=0){
       result=less;
-      remainder=greater%less;
+      int remainder=greater%less;
       greater=less;
       less=remainder;
     }
