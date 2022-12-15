@@ -12,12 +12,15 @@ public class GCDExample {
     int x=Integer.parseInt(reader.readLine());
     int y=Integer.parseInt(reader.readLine());
     int result;
-    if (x > y) {
-      result=getGcd(y,x);
-    }
-    else {
-      result=getGcd(x,y);
-    }
+//    if (x > y) {
+//      result=getGcd(y,x);
+//    }
+//    else {
+//      result=getGcd(x,y);
+//    }
+//    System.out.println(result);
+
+    result = getGcd(x,y);
     System.out.println(result);
 
   }
