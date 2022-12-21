@@ -14,12 +14,15 @@ public class PrimeFactor {
   }
 
   public static void primeFactors(int n) {
-    int nf=n;
+    int nf = n;
     for (int i = 2; i * i <= n; i++) {
       while (nf % i == 0) {
         nf /= i;
-        System.out.println(i);
+        System.out.print(i + " ");
       }
+    }
+    if (nf > 1) {
+      System.out.println(nf);
     }
   }
 }
